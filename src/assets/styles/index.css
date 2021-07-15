@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap");
+
+:root {
+  --error-color: red;
+  --primary-color: black;
+  --primary-color-text: white;
+  --secondary-color: #e3e7eb;
+  --seconday-color-text: black;
+  --accent-color: #567b95;
+  --accent-color-text: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination button {
+  border: none;
+  background-color: white;
+  color: blue;
+  text-decoration: underline;
+}
+
+.pagination button:hover {
+  cursor: pointer;
+}

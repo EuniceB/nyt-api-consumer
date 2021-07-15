@@ -1,0 +1,27 @@
+.articles {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article {
+  background-color: var(--secondary-color);
+  color: var(--secondary-color-text);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.article a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.article:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--accent-color-text);
+}
+
+.article + .article {
+  margin-top: 0.5em;
+}
