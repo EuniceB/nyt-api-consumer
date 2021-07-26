@@ -9,14 +9,13 @@ import styles from '../assets/styles/Pagination.module.css';
  */
 const Pagination = () => {
   const page = useSelector((state) => state.articles.page);
+  const articles = useSelector((state) => state.articles.items);
   const setPage = useActions(setPageAction);
 
-  return (
-    <div className={styles.pagination}>
-      <button type="button" onClick={() => setPage(page - 1)}>&lt; Prev page</button>
-      <button type="button" onClick={() => setPage(page + 1)}>Next page &gt;</button>
-    </div>
-  );
+  return articles && articles.length > 0 && (<div className={styles.pagination}>
+    <button type="button" onClick={() => setPage(page - 1)}>&lt; Prev page</button>
+    <button type="button" onClick={() => setPage(page + 1)}>Next page &gt;</button>
+  </div>);
 };
 
 export default Pagination;
